@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>single_use</title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+<body>
+    <h1>シングルユーザーで認証</h1>
+    <p>自分だけ使うときやテスト用</p>
+    <p><%= @test_sentence %></p>
+    <% for item in @tw_obj : %>
+        <li>@<%= item.user.screen_name %> : <%= item.text %></li>
+    <% end %>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript">
+
+
+</script>
+</body></html>

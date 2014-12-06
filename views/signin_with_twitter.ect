@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>signin_with_twitter</title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+<body>
+    <h1>ツイッターアカウントでサインイン</h1>
+    <p>ログインユーザーの各自の情報を持ってこれる</p>
+    <p><%= @test_sentence %></p>
+    <% for item in @tw_obj : %>
+        <li>@<%= item.user.screen_name %> : <%= item.text %></li>
+    <% end %>
+<script type="text/javascript">
+
+
+</script>
+</body></html>
